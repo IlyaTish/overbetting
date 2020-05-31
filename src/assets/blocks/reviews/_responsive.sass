@@ -1,17 +1,10 @@
 @media (max-width: 991px)
   .reviews-list
     grid-gap: 16px
-    grid-template-areas: "b c" "a a"
-    grid-template-columns: unset
+    grid-template-columns: repeat(2, 1fr)
 
   .reviews-item
     min-height: 220px
-
-    &:nth-child(1)
-      grid-area: b
-
-    &:nth-child(2)
-      grid-area: c
 
     &__content
       padding: 0 16px
@@ -38,7 +31,8 @@
     flex-direction: column
     align-items: center
     border-radius: 6px
-    grid-area: a
+    grid-column-start: 1
+    grid-column-end: 3
 
     .reviews-item__desc
       margin: 6px 0 12px
