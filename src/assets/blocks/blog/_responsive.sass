@@ -1,0 +1,102 @@
+@media (max-width: 1199px)
+  .blog
+    &__posts
+      max-width: 100%
+      margin: 0 20px 0 0
+
+
+
+@media (max-width: 991px)
+  .blog
+    flex-direction: column
+
+    &__posts
+      width: 100%
+      max-width: 100%
+      margin: 0
+
+
+  .main-post
+    padding: 0 0 12px
+    display: grid
+    grid-gap: 8px
+    grid-template-areas: 'a b' 'c c'
+    grid-template-columns: 64px 1fr
+
+    &__img-cont
+      width: 64px
+      height: 64px
+      flex: 0 0 64px
+      grid-area: a
+
+    &__content
+      display: flex
+      flex-direction: column
+      justify-content: center
+      grid-area: b
+
+    &__info
+      margin: 4px 0 0
+
+    &__title
+      font-size: 16px
+
+    &__p
+      margin: 0
+      font-size: 14px
+      line-height: 18px
+      grid-area: c
+
+
+  .post
+    padding: 12px 0
+
+    &__img-cont
+      width: 44px
+      height: 44px
+      flex: 0 0 44px
+      margin: 0 8px 0 0
+
+    &__img-cont.no-img
+      &:before
+        width: 44px
+        height: 44px
+
+
+    &__title
+      font-size: 16px
+
+    &__info
+      margin: 4px 0 0
+
+
+  .offers
+    width: 100%
+    max-width: 100%
+    margin: 24px 0 0
+    flex: 0 0 100%
+
+
+  .offer
+    padding: 12px 0
+
+    &__content
+      width: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+    &__img-cont
+      width: 44px
+      height: 44px
+      flex: 0 0 44px
+      margin: 0 8px 0 0
+
+    &__info
+      margin: 0 0 4px
+
+
+
+@media (max-width: 767px)
+  .blog
+    margin: 24px 0 0

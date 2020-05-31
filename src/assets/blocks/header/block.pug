@@ -1,0 +1,42 @@
+header.header
+  .container
+    .header-cont
+      .burger-btn
+        span.burger-btn__elem
+
+      a.header__logo(href='#')
+        picture
+          source(media='(max-width: 991px)' srcset='assets/img/header/logo-small.svg')
+          img(src='assets/img/header/logo.svg' alt='Overbetting')
+
+      .burger-menu.hidden
+
+      nav.header-nav
+        ul.header-nav__list
+          li.header-nav__item
+            a.header-nav__link(href="#") Прогнозы и конкурсы
+          li.header-nav__item
+            a.header-nav__link(href="#") Предматч
+          li.header-nav__item
+            a.header-nav__link(href="#") Букмекеры
+          li.header-nav__item
+            a.header-nav__link(href="#") Практика
+          li.header-nav__item
+            a.header-nav__link(href="#") Записи
+
+      a.notification-link(href="#")
+        i.icon.bell-icon
+
+      a.chat-link(href="#")
+        i.icon.chats-icon
+
+      .header-user
+        .header__userpic
+          img(src='assets/img/header/userpic.png', alt='Ава')
+        .header-user__cont
+          span.header-user__name konstantin199
+          .header-user__status
+            span.header-user__text Аналитик
+            .header-user__points
+              span 12 100
+              i.icon.points-icon

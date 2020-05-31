@@ -1,0 +1,172 @@
+.sidebar
+  width: 100%
+
+  .card-cappers
+    padding: 0 24px
+
+  &__title-cont
+    min-height: 50px
+    padding: 0 24px
+    display: flex
+    align-items: center
+    border-top-left-radius: 6px
+    border-top-right-radius: 6px
+    background: #E3EDF7
+    box-sizing: border-box
+
+  &__title
+    margin: 0
+    color: #000000
+    font-size: 14px
+    text-transform: uppercase
+    letter-spacing: 1px
+
+
+
+.capper
+  padding: 20px 0
+  box-sizing: border-box
+  position: relative
+
+  &:before, &:after
+    width: 318px
+    height: 16px
+    margin-left: -159px
+    content: ''
+    display: block
+    left: 50%
+    right: 0
+    position: absolute
+    background-size: 7px 100%
+
+  &:before
+    background-image: linear-gradient(300deg, #F5F5F5 18%, transparent 18%), linear-gradient(60deg, #F5F5F5 18%, transparent 18%)
+    background-position: 50%
+    bottom: 0
+
+  &:after
+    background-image: linear-gradient(120deg, #F5F5F5 18%, transparent 18%), linear-gradient(240deg, #F5F5F5 18%, transparent 18%)
+    background-position: calc(50% - 3.5px)
+    bottom: -16px
+
+  &__stats
+    margin: 12px 0 0
+    padding: 0
+
+  &__stat
+    margin: 0 0 4px
+    display: flex
+    justify-content: space-between
+    position: relative
+    list-style: none
+
+    &:last-of-type
+      margin: 0
+
+    &:before
+      width: 100%
+      height: 0
+      content: ''
+      bottom: 3px
+      position: absolute
+      line-height: 0
+      border-bottom: 1px dotted #ACACAC
+      z-index: 2
+
+    &--prognosis
+      padding: 4px 0
+      box-sizing: border-box
+
+      &:before
+        bottom: 7px
+
+      &:after
+        width: calc(100% + 14px)
+        height: 100%
+        content: ''
+        display: block
+        top: 0
+        left: -7px
+        position: absolute
+        background: #FEF8EB
+        border-radius: 6px
+        z-index: 1
+
+      .capper__stat-text
+        background: #FEF8EB
+        transition: .2s
+        &:hover
+          color: $main
+
+      .capper__amount
+        background: #FEF8EB
+
+    &--last-prognosis
+      &:before, &:after
+        display: none
+
+      .capper__stat-text
+        transition: .2s
+        &:hover
+          color: $main
+
+
+
+  &__stat-text, &__percent, &__amount
+    padding: 0 2px 0 0
+    display: inline-block
+    color: #000000
+    font-size: 14px
+    text-decoration: none
+    background: #FFFFFF
+    z-index: 3
+
+  &__stat-text.bold
+    font-weight: 700
+
+  &__percent
+    padding: 0 0 0 2px
+    color: #1B9162
+
+  &__amount
+    padding: 0 0 0 2px
+    color: $gray
+
+  .user
+    &__ava
+      width: 36px
+      height: 36px
+      margin: 0 8px 0 0
+      border: none
+
+    &__name
+      color: #000000
+      font-size: 18px
+      &:hover
+        color: $main
+
+
+.news-item
+  padding: 16px 0
+  border-bottom: 1px solid #F5F5F5
+  box-sizing: border-box
+  &:first-of-type
+    padding: 0 0 16px
+
+  &__title
+    color: #000000
+    font-size: 14px
+    text-decoration: none
+    line-height: 18px
+    transition: .2s
+    &:hover
+      color: $main
+
+  &__info
+    margin: 4px 0 0
+    display: flex
+    color: $gray
+    font-size: 12px
+
+  &__tag
+    margin: 0 0 0 8px

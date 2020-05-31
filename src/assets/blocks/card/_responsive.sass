@@ -1,0 +1,136 @@
+@media (max-width: 991px)
+  .card-list
+    &__col.image-col
+      max-width: 92px
+      flex: 0 0 92px
+
+    &__col.num-col
+      max-width: 28px
+      flex: 0 0 28px
+
+    &__col.price-col
+      max-width: 74px
+      flex: 0 0 74px
+
+    &__col.btn-col
+      .btn-light
+        margin: 0 10px 0 0
+
+
+    &__item
+      padding: 16px 0
+
+    &__num
+      font-size: 18px
+
+    &__price
+      min-height: 28px
+      padding: 10px
+      font-size: 14px
+
+
+
+@media (max-width: 767px)
+  .card
+    margin: 0 0 24px
+    padding: 16px
+
+    &__title
+      margin: 0 0 12px
+      font-size: 12px
+
+    &__links
+      padding: 12px 0
+
+    &__link
+      font-size: 12px
+
+  .card-temp
+    padding: 16px 16px 0
+
+
+  .card-filters
+    padding: 10px
+
+    &__filter
+      min-height: 24px
+      padding: 5px 10px
+      font-size: 12px
+
+
+  .card-list
+    &__col.member-col
+      display: none
+
+    &__col.reviews-col
+      flex: 0 0 30px
+      max-width: 30px
+
+
+    &__item
+      padding: 12px 0
+
+    &__num
+      font-size: 14px
+
+    &__reviews
+      font-size: 14px
+
+    &__price
+      padding: 5px 10px
+
+
+
+@media (max-width: 549px)
+  .card
+    padding: 8px
+    border-radius: 0
+
+    &__links
+      padding: 8px 0 0
+
+    &__link
+      padding: 0 0 8px
+
+  .card-temp
+    padding: 8px 8px 0
+
+
+  .card-filters
+    .swiper-wrapper
+      flex-wrap: nowrap
+
+
+  .card-list
+    &__col.image-col
+      max-width: 112px
+      height: 36px
+      display: flex
+      align-items: center
+      justify-content: center
+      flex: 0 0 112px
+      border-radius: 6px
+      background: #F0F0F0
+
+    &__item
+      &:first-of-type
+        .card-list__col.reviews-col
+          &:before
+            content: 'Отз.'
+            left: 1px
+
+
+
+    &__logo
+      max-width: 90px
+      max-height: 24px
+
+
+
+@media (max-width: 479px)
+  .card-list
+    &__col.num-col
+      display: none
+
+    &__col.price-col
+      display: none
