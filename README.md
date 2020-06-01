@@ -1,10 +1,10 @@
-### Overbetting 
+### Overbetting
 
 <strong>Overbetting</strong> — cамый продвинутый сайт о ставках на спорт и букмекерских конторах. Прогнозы на спорт, конкурсы, рейтинг букмекеров, сравнение коэффициентов, предматчевая статистика, обзоры матчей и многое другое.
 
 ### Ссылки на страницы
 
-About page: https://ilyatish.github.io/overbetting
+Index page: https://ilyatish.github.io/overbetting
 
 ### Запуск проекта (команды npm) в ветке develop
 
