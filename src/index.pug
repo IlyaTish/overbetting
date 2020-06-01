@@ -2,7 +2,7 @@ extends template.pug
 
 block content
   //- Include Header block ('.header')
-  include assets/blocks/header/block.pug
+  include assets/blocks/common/header/block.pug
 
 
   - const page = 'index'
@@ -10,28 +10,28 @@ block content
     .container
       .main-content
         //- Include Card block ('.card')
-        include assets/blocks/card/block.pug
+        include assets/blocks/@index/card/block.pug
 
         //- Include Card block ('.card')
-        include assets/blocks/card/block.pug
+        include assets/blocks/@index/card/block.pug
 
         //- Include Card-items block ('.card-items')
-        include assets/blocks/card-items/block.pug
+        include assets/blocks/@index/card-items/block.pug
 
-        // //- Include Analytics block ('.analytics')
-        // include assets/blocks/analytics/block.pug
+        //- Include Analytics block ('.analytics')
+        include assets/blocks/@index/analytics/block.pug
 
         //- Include Prognosis block ('.prognosis')
-        include assets/blocks/prognosis/block.pug
+        include assets/blocks/@index/prognosis/block.pug
 
         //- Include Card-slider block ('.card-slider')
-        include assets/blocks/card-slider/block.pug
+        include assets/blocks/@index/card-slider/block.pug
 
         //- Include Reviews block ('.reviews')
-        include assets/blocks/reviews/block.pug
+        include assets/blocks/@index/reviews/block.pug
 
         //- Include Blog block ('.blog')
-        include assets/blocks/blog/block.pug
+        include assets/blocks/@index/blog/block.pug
 
 
       .sidebar-content
@@ -40,4 +40,4 @@ block content
 
 
   //- Include Footer block ('.footer')
-  include assets/blocks/footer/block.pug
+  include assets/blocks/common/footer/block.pug

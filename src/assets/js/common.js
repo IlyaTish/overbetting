@@ -18,16 +18,27 @@ const appendElem = (elem, cont) => {
   cont.appendChild(elem);
 }
 
+// Teleport function
+const appendElems = (elem, cont) => {
+  [].forEach.call(cont, (contElem, contIndex) => {
+    [].forEach.call(elem, (item, itemIndex) => {
+      if (contIndex === itemIndex) {
+        contElem.appendChild(item);
+      }
+    })
+  })
+}
+
 
 
 /* Exports */
 
-//= require ../blocks/header/script.js
-//= require ../blocks/card/script.js
-//= require ../blocks/card-items/script.js
-//= require ../blocks/card-slider/script.js
-//= require ../blocks/blog/script.js
-//= require ../blocks/footer/script.js
+//= require ../blocks/common/header/script.js
+//= require ../blocks/@index/card/script.js
+//= require ../blocks/@index/card-items/script.js
+//= require ../blocks/@index/card-slider/script.js
+//= require ../blocks/@index/blog/script.js
+//= require ../blocks/common/footer/script.js
 
 
 
@@ -38,6 +49,7 @@ ready(() => {
     headerTeleport();
     blogTeleport();
     setCardItemsData(DATA_CONTENT_MEDIA, DATA_CONTENT_DESKTOP);
+    analyticsTeleport();
     footerTeleport();
   }
 });

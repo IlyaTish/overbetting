@@ -1,0 +1,94 @@
+@media (max-width: 991px)
+  .analytics-item
+    padding: 14px 0
+
+    &__col.img-col
+      max-width: 68px
+      flex: 0 0 68px
+
+    &__col.coef-col
+      max-width: 210px
+      flex: 0 0 210px
+
+    &__logo-cont
+      width: 34px
+      height: 34px
+
+    &__logo-cont.no-logo
+      background-size: 34px
+
+    &__logo
+      max-width: 34px
+
+    &__title
+      font-size: 14px
+
+
+  .preview-coef
+    width: 62px
+    height: 20px
+    border-radius: 4px
+
+    &__prop
+      font-size: 11px
+
+    &__val
+      width: 36px
+      height: 16px
+      flex: 0 0 36px
+      font-size: 11px
+      border-radius: 4px
+
+
+
+@media (max-width: 767px)
+  .analytics-list
+    padding: 0 16px
+
+
+  .analytics-item
+    flex-wrap: wrap
+
+    &__col.coef-col
+      align-items: flex-end
+
+
+
+@media (max-width: 710px)
+  .analytics-item
+    display: grid
+    grid-template-areas: 'img info info' 'img coef coef'
+    grid-auto-columns: 34px 1fr 1fr
+
+    &__col.img-col
+      max-width: 34px
+      flex: 0 0 34px
+      flex-direction: column
+      grid-area: img
+
+    &__col.info-col
+      flex: 1 0 60%
+      grid-area: info
+
+    &__col.coef-col
+      margin: 8px 0 0 8px
+      grid-area: coef
+
+
+
+@media (max-width: 549px)
+  .analytics
+    &__title
+      padding: 0 6px
+      font-size: 22px
+      align-items: center
+
+      .icon
+        height: 16px
+        margin: 0 0 0 4px
+        font-size: 16px
+        top: 0
+
+
+  .analytics-list
+    padding: 0 8px
