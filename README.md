@@ -4,7 +4,8 @@
 
 ### Ссылки на страницы
 
-Index page: https://ilyatish.github.io/overbetting
+Index page: https://ilyatish.github.io/overbetting  
+Competition page: https://ilyatish.github.io/overbetting/competition.html
 
 ### Запуск проекта (команды npm) в ветке develop
 
