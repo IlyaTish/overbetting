@@ -15,18 +15,7 @@ const ready = (callback) => {
 
 // Teleport function
 const appendElem = (elem, cont) => {
-  cont.appendChild(elem);
-}
-
-// Teleport function
-const appendElems = (elem, cont) => {
-  [].forEach.call(cont, (contElem, contIndex) => {
-    [].forEach.call(elem, (item, itemIndex) => {
-      if (contIndex === itemIndex) {
-        contElem.appendChild(item);
-      }
-    })
-  })
+  if (cont) cont.appendChild(elem)
 }
 
 
@@ -49,7 +38,6 @@ ready(() => {
     headerTeleport();
     blogTeleport();
     setCardItemsData(DATA_CONTENT_MEDIA, DATA_CONTENT_DESKTOP);
-    analyticsTeleport();
     footerTeleport();
   }
 });

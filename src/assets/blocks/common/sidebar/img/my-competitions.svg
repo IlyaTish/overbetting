@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="9" cy="7" r="7" fill="#000"/>
+        <circle cx="9" cy="7" r="4.5" fill="#F30000" stroke="#FFF"/>
+        <text fill="#FFF" font-family="FedraSansPro-Bold, Fedra Sans Pro" font-size="9" font-weight="bold">
+            <tspan x="7" y="10">1</tspan>
+        </text>
+        <path fill="#000" fill-rule="nonzero" d="M17.395 15.45l-1.808-3.877c-1.073 1.454-2.627 2.525-4.43 2.98l1.459 3.143c.087.186.273.304.478.304h.023c.212-.01.4-.147.472-.347l.84-2.325 2.308.84c.2.074.425.018.57-.139.143-.158.178-.386.088-.58zM1.866 11.573L.058 15.45c-.09.193-.055.421.089.579.145.157.37.214.569.139l2.308-.84.84 2.325c.073.2.26.337.472.346L4.36 18c.204 0 .39-.118.477-.304l1.458-3.144c-1.802-.454-3.356-1.525-4.43-2.979z"/>
+    </g>
+</svg>

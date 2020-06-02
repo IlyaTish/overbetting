@@ -1,6 +1,9 @@
 extends template.pug
 
 block content
+  //- Include Index page data
+  include data/index-data.pug
+
   //- Include Header block ('.header')
   include assets/blocks/common/header/block.pug
 
@@ -35,8 +38,11 @@ block content
 
 
       .sidebar-content
+
+
         //- Include Sidebar block ('.sidebar')
-        include assets/blocks/sidebar/block.pug
+        include assets/blocks/common/sidebar/block.pug
+        +sidebar(SIDEBAR_DATA)
 
 
   //- Include Footer block ('.footer')

@@ -1,0 +1,209 @@
+mixin sidebar(SIDEBAR_DATA)
+  .sidebar
+    if SIDEBAR_DATA.coupon
+      .coupon
+        span.coupon__text Купон
+        span.coupon__amount 4
+
+
+
+    if SIDEBAR_DATA.menu
+      ul.sidebar-menu.card
+        li.sidebar-menu__item
+          a.sidebar-menu__link.my-prognosis(href='#') Мои прогнозы
+        li.sidebar-menu__item
+          a.sidebar-menu__link.my-feed(href='#') Лента прогнозов <span class='feeds-amount'>4</span>
+        li.sidebar-menu__item
+          a.sidebar-menu__link.my-competitions.active(href='#') Мои конкурсы
+
+
+
+    if SIDEBAR_DATA.prognosis
+      .card.sidebar-list.sidebar-prognosis
+        .sidebar__title-cont
+          h2.sidebar__title Прогнозы
+
+        ul.sidebar-list__items
+          span.sidebar-list__title Все прогнозы
+          li.sidebar-list__item
+            a.sidebar-list__link Лучшие <span class='amount'><i class='icon clock-light-icon'></i>687</span>
+          li.sidebar-list__item
+            a.sidebar-list__link Популярные <span class='amount'><i class='icon clock-light-icon'></i>400</span>
+          li.sidebar-list__item
+            a.sidebar-list__link От аналитиков <span class='amount'><i class='icon clock-light-icon'></i>128</span>
+          li.sidebar-list__item
+            a.sidebar-list__link На сегодня <span class='amount'><i class='icon clock-light-icon'></i>87</span>
+          li.sidebar-list__item
+            a.sidebar-list__link На завтра <span class='amount'><i class='icon clock-light-icon'></i>16</span>
+
+
+
+    if SIDEBAR_DATA.competitions
+      .card.sidebar-list.sidebar-competitions
+        .sidebar__title-cont
+          h2.sidebar__title Конкурсы
+
+        ul.sidebar-list__items
+          li.sidebar-list__item
+            a.sidebar-list__link.competitions-list Список конкурсов
+          li.sidebar-list__item
+            a.sidebar-list__link.cappers-rate Рейтинг капперов
+          li.sidebar-list__item
+            a.sidebar-list__link Общие правила
+          li.sidebar-list__item
+            a.sidebar-list__link FAQ
+          li.sidebar-list__item
+            a.sidebar-list__link Архив конкурсов
+
+
+
+    if SIDEBAR_DATA.cappers
+      .sidebar__title-cont
+        h2.sidebar__title Лучшие капперы
+
+      .card.card-cappers
+        .cappers
+          .capper
+            .user
+              a.user__ava(href='#')
+                img(src='assets/img/common/ava.jpg' alt='Heo780109')
+              a.user__name(href='#') Heo780109
+
+            .capper__content
+              ul.capper__stats
+                li.capper__stat
+                  span.capper__stat-text ROI, <span class='gray'>100 ставок</span>
+                  span.capper__percent +62,52%
+
+                li.capper__stat
+                  span.capper__stat-text Прибыль, <span class='gray'>тек. год</span>
+                  span.capper__percent +162,54%
+
+                li.capper__stat.capper__stat--prognosis
+                  a.capper__stat-text.bold(href='#') Актуальные прогнозы
+                  span.capper__amount 14
+
+
+          .capper
+            .user
+              a.user__ava(href='#')
+                img(src='assets/img/common/sidebar/ava-1.jpg' alt='oldstar')
+              a.user__name(href='#') oldstar
+
+            .capper__content
+              ul.capper__stats
+                li.capper__stat
+                  span.capper__stat-text ROI, <span class='gray'>100 ставок</span>
+                  span.capper__percent +45,59%
+
+                li.capper__stat
+                  span.capper__stat-text Прибыль, <span class='gray'>тек. год</span>
+                  span.capper__percent +98,02%
+
+                li.capper__stat.capper__stat--prognosis
+                  a.capper__stat-text.bold(href='#') Актуальные прогнозы
+                  span.capper__amount 10
+
+
+          .capper
+            .user
+              a.user__ava(href='#')
+                img(src='assets/img/common/sidebar/ava-2.jpg' alt='prognozir')
+              a.user__name(href='#') prognozir
+
+            .capper__content
+              ul.capper__stats
+                li.capper__stat
+                  span.capper__stat-text ROI, <span class='gray'>100 ставок</span>
+                  span.capper__percent +42,76%
+
+                li.capper__stat
+                  span.capper__stat-text Прибыль, <span class='gray'>тек. год</span>
+                  span.capper__percent +94,92%
+
+                li.capper__stat.capper__stat--prognosis
+                  a.capper__stat-text.bold(href='#') Актуальные прогнозы
+                  span.capper__amount 9
+
+
+          .capper
+            .user
+              a.user__ava(href='#')
+                img(src='assets/img/common/sidebar/ava-3.jpg' alt='USBZVER')
+              a.user__name(href='#') USBZVER
+
+            .capper__content
+              ul.capper__stats
+                li.capper__stat
+                  span.capper__stat-text ROI, <span class='gray'>100 ставок</span>
+                  span.capper__percent +36,04%
+
+                li.capper__stat
+                  span.capper__stat-text Прибыль, <span class='gray'>тек. год</span>
+                  span.capper__percent +90,1%
+
+                li.capper__stat.capper__stat.capper__stat--last-prognosis
+                  a.capper__stat-text.bold(href='#') Последние прогнозы
+
+
+          .capper
+            .user
+              a.user__ava(href='#')
+                img(src='assets/img/common/sidebar/ava-4.jpg' alt='wmarko767')
+              a.user__name(href='#') wmarko767
+
+            .capper__content
+              ul.capper__stats
+                li.capper__stat
+                  span.capper__stat-text ROI, <span class='gray'>100 ставок</span>
+                  span.capper__percent +99,33%
+
+                li.capper__stat
+                  span.capper__stat-text Прибыль, <span class='gray'>тек. год</span>
+                  span.capper__percent +79,46%
+
+                .capper__stat.capper__stat--last-prognosis
+                  a.capper__stat-text.bold(href='#') Последние прогнозы
+
+        .card__links
+          a.card__link.blue(href='#') Все капперы
+
+
+
+    if SIDEBAR_DATA.news
+      .card.card-temp.card-news
+        h2.card__title Новости
+
+        .news
+          .news-item
+            a.news-item__title(href='#') Головин остается в&nbsp;Монако до&nbsp;2024 года
+            .news-item__info
+              span.news-item__date 20 окт, 20:00
+              span.news-item__tag Футбол
+
+          .news-item
+            a.news-item__title(href='#') Сезон 2019/20 возможно не&nbsp;будет доигран
+            .news-item__info
+              span.news-item__date 20 окт, 20:00
+              span.news-item__tag Футбол
+
+          .news-item
+            a.news-item__title(href='#') Bellator 241 перенесен
+            .news-item__info
+              span.news-item__date 20 окт, 20:00
+              span.news-item__tag Футбол
+
+          .news-item
+            a.news-item__title(href='#') Чемпионат Германии приостановлен до&nbsp;2&nbsp;апреля
+            .news-item__info
+              span.news-item__date 20 окт, 20:00
+              span.news-item__tag Футбол
+
+          .news-item
+            a.news-item__title(href='#') UEFA переносит матчи&nbsp;ЛЧ и&nbsp;ЛЕ
+            .news-item__info
+              span.news-item__date 20 окт, 20:00
+              span.news-item__tag Футбол
+
+        .card__links
+          a.card__link.blue(href='#') Все новости

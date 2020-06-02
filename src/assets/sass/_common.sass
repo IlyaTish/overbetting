@@ -383,6 +383,9 @@ img
     display: flex
     justify-content: space-between
 
+.content.competition
+  .main-content
+    margin: 0 0 0 24px
 
 .main-content
   width: 50%
@@ -547,6 +550,69 @@ img
   height: 24px
   border-radius: 6px
   background: #F0F0F0
+
+
+
+/* Coupon */
+
+.coupon
+  width: 100%
+  margin: 0 0 24px
+  padding: 4px 0
+  max-width: 318px
+  min-height: 52px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  position: relative
+  border-radius: 6px
+  background-image: linear-gradient(99deg, #FF0467, #FC7437 102%)
+  box-sizing: border-box
+
+  &:after
+    margin-top: -7px
+    content: ''
+    position: absolute
+    right: 0
+    top: 50%
+    border: 7px solid transparent
+    border-right: 7px solid #F5F5F5
+
+  &:before
+    margin-top: -7px
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    border: 7px solid transparent
+    border-left: 7px solid #F5F5F5
+
+  &__text
+    padding: 0 10px 0 24px
+    color: #FFFFFF
+    font-size: 24px
+    font-weight: 200 
+    font-family: 'FedraSansPro', 'OpenSans', sans-serif
+
+  &__amount
+    padding: 0 37px 0 30px
+    position: relative
+    color: #FFFFFF
+    font-size: 24px
+    font-weight: 500
+    text-align: right
+    font-family: 'Roboto', 'OpenSans', sans-serif
+    line-height: 28px
+
+    &:before
+      width: 3px
+      height: 27px
+      content: ''
+      display: block
+      top: 0
+      left: 0
+      position: absolute
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMyIgaGVpZ2h0PSIyNyIgdmlld0JveD0iMCAwIDMgMjciIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjEuNSIgY3k9IjEuNSIgcj0iMS41IiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIxLjUiIGN5PSI3LjUiIHI9IjEuNSIgZmlsbD0id2hpdGUiLz4KPGNpcmNsZSBjeD0iMS41IiBjeT0iMTMuNSIgcj0iMS41IiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIxLjUiIGN5PSIyNS41IiByPSIxLjUiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjEuNSIgY3k9IjE5LjUiIHI9IjEuNSIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==')
 
 
 

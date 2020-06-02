@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Overbetting</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-cont">
+            <div class="burger-btn"><span class="burger-btn__elem"></span></div><a class="header__logo" href="#">
+              <picture>
+                <source media="(max-width: 991px)" srcset="assets/img/common/header/logo-small.svg"><img src="assets/img/common/header/logo.svg" alt="Overbetting">
+              </picture></a>
+            <div class="burger-menu hidden"></div>
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Прогнозы и конкурсы</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Предматч</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Букмекеры</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Практика</a></li>
+                <li class="header-nav__item"><a class="header-nav__link" href="#">Записи</a></li>
+              </ul>
+            </nav><a class="notification-link" href="#"><i class="icon bell-icon"></i></a><a class="chat-link" href="#"><i class="icon chats-icon"></i></a>
+            <div class="header-user">
+              <div class="header__userpic"><img src="assets/img/common/header/userpic.png" alt="Ава"></div>
+              <div class="header-user__cont"><span class="header-user__name">konstantin199</span>
+                <div class="header-user__status"><span class="header-user__text">Аналитик</span>
+                  <div class="header-user__points"><span>12 100</span><i class="icon points-icon"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content competition">
+        <div class="container">
+          <div class="sidebar-content">
+                        <div class="sidebar">
+                          <div class="coupon"><span class="coupon__text">Купон</span><span class="coupon__amount">4</span></div>
+                          <ul class="sidebar-menu card">
+                            <li class="sidebar-menu__item"><a class="sidebar-menu__link my-prognosis" href="#">Мои прогнозы</a></li>
+                            <li class="sidebar-menu__item"><a class="sidebar-menu__link my-feed" href="#">Лента прогнозов <span class='feeds-amount'>4</span></a></li>
+                            <li class="sidebar-menu__item"><a class="sidebar-menu__link my-competitions active" href="#">Мои конкурсы</a></li>
+                          </ul>
+                          <div class="card sidebar-list sidebar-prognosis">
+                            <div class="sidebar__title-cont">
+                              <h2 class="sidebar__title">Прогнозы</h2>
+                            </div>
+                            <ul class="sidebar-list__items"><span class="sidebar-list__title">Все прогнозы</span>
+                              <li class="sidebar-list__item"><a class="sidebar-list__link">Лучшие <span class='amount'><i class='icon clock-light-icon'></i>687</span></a></li>
+                              <li class="sidebar-list__item"><a class="sidebar-list__link">Популярные <span class='amount'><i class='icon clock-light-icon'></i>400</span></a></li>
+                              <li class="sidebar-list__item"><a class="sidebar-list__link">От аналитиков <span class='amount'><i class='icon clock-light-icon'></i>128</span></a></li>
+                              <li class="sidebar-list__item"><a class="sidebar-list__link">На сегодня <span class='amount'><i class='icon clock-light-icon'></i>87</span></a></li>
+                              <li class="sidebar-list__item"><a class="sidebar-list__link">На завтра <span class='amount'><i class='icon clock-light-icon'></i>16</span></a></li>
+                            </ul>
+                          </div>
+                          <div class="card sidebar-list sidebar-competitions">
+                            <div class="sidebar__title-cont">
+                              <h2 class="sidebar__title">Конкурсы</h2>
+                            </div>
+                            <ul class="sidebar-list__items">
+                              <li class="sidebar-list__item"><a class="sidebar-list__link competitions-list">Список конкурсов</a></li>
+                              <li class="sidebar-list__item"><a class="sidebar-list__link cappers-rate">Рейтинг капперов</a></li>
+                              <li class="sidebar-list__item"><a class="sidebar-list__link">Общие правила</a></li>
+                              <li class="sidebar-list__item"><a class="sidebar-list__link">FAQ</a></li>
+                              <li class="sidebar-list__item"><a class="sidebar-list__link">Архив конкурсов</a></li>
+                            </ul>
+                          </div>
+                        </div>
+          </div>
+          <div class="main-content">
+            <div class="comp-head">
+              <div class="comp-head__title-cont">
+                <h1 class="comp-head__title">Мои конкурсы</h1><span class="comp-head__subtitle">Список конкурсов с вашим участием</span>
+              </div>
+              <ul class="comp-filters">
+                <li class="comp-filters__filter active">Текущие конкурсы</li>
+                <li class="comp-filters__filter">История достижений</li>
+                <li class="comp-filters__filter">Награды</li>
+              </ul>
+            </div>
+            <div class="comp-common card">
+              <div class="comp-table">
+                <div class="comp-caption">
+                  <div class="comp-table__col comp-col"><span class="comp-caption__title">Конкурс</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-caption__title">% от банка</span></div>
+                  <div class="comp-table__col roi-col"><span class="comp-caption__title">ROI</span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-caption__title">Прогнозы</span></div>
+                  <div class="comp-table__col rate-col"><span class="comp-caption__title">Рейтинг</span></div>
+                </div>
+                <div class="comp-table__cols">
+                  <div class="comp-table__col comp-col">
+                    <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/@index/card-slider/atp.jpg" alt="Общий зачет"></div>
+                    <div class="comp-table__info"><span class="comp-table__title">Общий зачёт</span><span class="comp-table__date"><i class='icon stage-lifetime-icon'></i> 1 мар - 30 апр 2020</span></div>
+                  </div>
+                  <div class="comp-table__col perc-col"><span class="comp-table__perc">+30.20%<span class='sup'>+1500</span></span><span class="comp-table__place-text">1 место</span></div>
+                  <div class="comp-table__col roi-col"><span class="comp-table__perc">+100.23%<span class='sup'>+1500</span></span><span class="comp-table__place-text">10 место</span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-table__prognosis">500</span>
+                    <div class="icon check-icon"></div>
+                  </div>
+                  <div class="comp-table__col rate-col">
+                    <div class="comp-table__rate"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comp-usual card">
+              <h2 class="card__title card__title--comp">Обычные</h2>
+              <div class="comp-table">
+                <div class="comp-caption">
+                  <div class="comp-table__col comp-col"><span class="comp-caption__title">Конкурс</span></div>
+                  <div class="comp-table__col place-col"><span class="comp-caption__title">Место</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-caption__title">% от банка</span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-caption__title">Прогнозы</span></div>
+                  <div class="comp-table__col rate-col"><span class="comp-caption__title">Рейтинг</span></div>
+                </div>
+                <div class="comp-table__cols">
+                  <div class="comp-table__col comp-col">
+                    <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/@index/card-slider/wta.jpg" alt="Общий зачет"></div>
+                    <div class="comp-table__info"><span class="comp-table__title">Эксперт WTA</span><span class="comp-table__date"><i class='icon stage-lifetime-icon'></i> 1 мар - 30 апр 2020</span></div>
+                  </div>
+                  <div class="comp-table__col place-col"><span class="comp-table__place">100</span><span class="comp-table__members-text">200 участников</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-table__perc">+400.20%<span class='sup'>+1500</span></span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-table__prognosis">500</span>
+                    <div class="icon check-icon"></div>
+                  </div>
+                  <div class="comp-table__col rate-col">
+                    <div class="comp-table__rate"></div>
+                  </div>
+                </div>
+                <div class="comp-table__cols">
+                  <div class="comp-table__col comp-col">
+                    <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/@index/card-slider/atp.jpg" alt="Общий зачет"></div>
+                    <div class="comp-table__info"><span class="comp-table__title">Эксперт АТР</span><span class="comp-table__date"><i class='icon stage-lifetime-icon'></i> 1 мар - 30 апр 2020</span></div>
+                  </div>
+                  <div class="comp-table__col place-col"><span class="comp-table__place">50</span><span class="comp-table__members-text">30 участников</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-table__perc">+30.20%<span class='sup'>+1500</span></span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-table__prognosis">1</span>
+                    <div class="icon check-icon"></div>
+                  </div>
+                  <div class="comp-table__col rate-col">
+                    <div class="comp-table__rate"></div>
+                  </div>
+                </div>
+                <div class="comp-table__cols">
+                  <div class="comp-table__col comp-col">
+                    <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/@index/card-slider/wta.jpg" alt="Общий зачет"></div>
+                    <div class="comp-table__info"><span class="comp-table__title">Эксперт КХЛ</span><span class="comp-table__date"><i class='icon stage-lifetime-icon'></i> 1 мар - 30 апр 2020</span></div>
+                  </div>
+                  <div class="comp-table__col place-col"><span class="comp-table__place">30</span><span class="comp-table__members-text">30 участников</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-table__perc">+20.20%<span class='sup'>+1500</span></span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-table__prognosis">1</span>
+                    <div class="icon check-icon"></div>
+                  </div>
+                  <div class="comp-table__col rate-col">
+                    <div class="comp-table__rate"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comp-seat-n-go card">
+              <h2 class="card__title card__title--comp">Сит-Н-Гоу</h2>
+              <div class="comp-table">
+                <div class="comp-caption">
+                  <div class="comp-table__col comp-col"><span class="comp-caption__title">Конкурс</span></div>
+                  <div class="comp-table__col place-col"><span class="comp-caption__title">Место</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-caption__title">% от банка</span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-caption__title">Прогнозы</span></div>
+                  <div class="comp-table__col rate-col"><span class="comp-caption__title">Рейтинг</span></div>
+                </div>
+                <div class="comp-table__cols">
+                  <div class="comp-table__col comp-col">
+                    <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/@index/card-slider/wta.jpg" alt="Общий зачет"></div>
+                    <div class="comp-table__info"><span class="comp-table__title">Эксперт НБА</span><span class="comp-table__date"><i class='icon clock-icon'></i> Набор участников</span></div>
+                  </div>
+                  <div class="comp-table__col place-col"><span class="comp-table__place"><i class='icon clock-icon'></i></span><span class="comp-table__members-text">200 участников</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-table__perc dash">—</span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-table__prognosis dash">—</span></div>
+                  <div class="comp-table__col rate-col">
+                    <div class="comp-table__users"></div>
+                  </div>
+                </div>
+                <div class="comp-table__cols">
+                  <div class="comp-table__col comp-col">
+                    <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/@index/card-slider/atp.jpg" alt="Общий зачет"></div>
+                    <div class="comp-table__info"><span class="comp-table__title">Эксперт НБА</span><span class="comp-table__date"><i class='icon stage-lifetime-icon'></i> Старт через 10ч. 32 мин.</span></div>
+                  </div>
+                  <div class="comp-table__col place-col"><span class="comp-table__place"><i class='icon clock-icon'></i></span><span class="comp-table__members-text">30 участников</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-table__perc dash">—</span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-table__prognosis dash">—</span></div>
+                  <div class="comp-table__col rate-col">
+                    <div class="comp-table__users"></div>
+                  </div>
+                </div>
+                <div class="comp-table__cols">
+                  <div class="comp-table__col comp-col">
+                    <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/@index/card-slider/wta.jpg" alt="Общий зачет"></div>
+                    <div class="comp-table__info"><span class="comp-table__title">Эксперт НХЛ</span><span class="comp-table__date"><i class='icon stage-lifetime-icon'></i> 1 мар - 30 апр 2019</span></div>
+                  </div>
+                  <div class="comp-table__col place-col"><span class="comp-table__place">100</span><span class="comp-table__members-text">30 участников</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-table__perc">+13.10%<span class='sup'>+655</span></span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-table__prognosis">500</span>
+                    <div class="icon check-icon"></div>
+                  </div>
+                  <div class="comp-table__col rate-col">
+                    <div class="comp-table__rate"></div>
+                  </div>
+                </div>
+                <div class="comp-table__cols">
+                  <div class="comp-table__col comp-col">
+                    <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/@index/card-slider/wta.jpg" alt="Общий зачет"></div>
+                    <div class="comp-table__info"><span class="comp-table__title">1xBet Каппер</span><span class="comp-table__date"><i class='icon stage-lifetime-icon'></i> 01 июня - 31 июля 2018</span></div>
+                  </div>
+                  <div class="comp-table__col place-col"><span class="comp-table__place">50</span><span class="comp-table__members-text">30 участников</span></div>
+                  <div class="comp-table__col perc-col"><span class="comp-table__perc">+30.20%<span class='sup'>+1500</span></span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-table__prognosis">1</span>
+                    <div class="icon check-icon"></div>
+                  </div>
+                  <div class="comp-table__col rate-col">
+                    <div class="comp-table__rate"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="comp-special card">
+              <h2 class="card__title card__title--comp">Специальные</h2>
+              <div class="comp-table">
+                <div class="comp-caption">
+                  <div class="comp-table__col comp-col"><span class="comp-caption__title">Конкурс</span></div>
+                  <div class="comp-table__col place-col"><span class="comp-caption__title">Место</span></div>
+                  <div class="comp-table__col profit-col"><span class="comp-caption__title">Прибыль</span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-caption__title">Прогнозы</span></div>
+                  <div class="comp-table__col rate-col"><span class="comp-caption__title">Рейтинг</span></div>
+                </div>
+                <div class="comp-table__cols">
+                  <div class="comp-table__col comp-col">
+                    <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/common/za-protiv.jpg" alt="За и против"></div>
+                    <div class="comp-table__info"><span class="comp-table__title">За и Против</span><span class="comp-table__date"><i class='icon stage-lifetime-icon'></i> 01 июня - 31 июля 2018</span></div>
+                  </div>
+                  <div class="comp-table__col place-col"><span class="comp-table__place">12</span></div>
+                  <div class="comp-table__col profit-col"><span class="comp-table__profit">+3 024</span></div>
+                  <div class="comp-table__col prognosis-col"><span class="comp-table__prognosis">500</span>
+                    <div class="icon check-icon"></div>
+                  </div>
+                  <div class="comp-table__col rate-col">
+                    <div class="comp-table__rate"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <nav class="footer-nav">
+          <div class="container">
+            <div class="footer-nav__cont">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Программа лояльности</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Политика конфиденциальности</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Работа на сайте</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Помощь</a></li>
+              </ul>
+              <ul class="footer-social">
+                <li class="footer-social__item"><a class="footer-social__link youtube" href="https://www.youtube.com/user/overbetting" target="_blank"><img class="footer-social__img" src="assets/img/common/footer/youtube.svg" alt="Youtube"></a></li>
+                <li class="footer-social__item"><a class="footer-social__link vk" href="https://vk.com/overbetting" target="_blank"><img class="footer-social__img" src="assets/img/common/footer/vk.svg" alt="Vk"></a></li>
+                <li class="footer-social__item"><a class="footer-social__link twitter" href="https://twitter.com/overbetting" target="_blank"><img class="footer-social__img" src="assets/img/common/footer/twitter.svg" alt="Twitter"></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="footer-content">
+          <div class="container">
+            <div class="footer-content__cont">
+              <ul class="footer-menu">
+                <h3 class="footer-menu__title">Прогнозы и конкурсы</h3>
+                <div class="footer-menu__col footer-menu__col--1">
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Все прогнозы</a></li>
+                  <ul class="footer-menu__list-inner">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Лучшие</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Популярные</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">На сегодня</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">На завтра</a></li>
+                  </ul>
+                  <ul class="footer-menu competition">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Список конкурсов</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Общие правила</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вопросы и ответы</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Рейтинг капперов</a></li>
+                  </ul>
+                </div>
+              </ul>
+              <ul class="footer-menu media-col-1">
+                <h3 class="footer-menu__title">Конкурсы</h3>
+              </ul>
+              <ul class="footer-menu">
+                <h3 class="footer-menu__title">Линия</h3>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Популярное</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Футбол</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Хоккей</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Теннис</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Баскетбол</a></li>
+              </ul>
+              <ul class="footer-menu">
+                <h3 class="footer-menu__title">Предматч</h3>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Популярное</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Футбол</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Хоккей</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Теннис</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Баскетбол</a></li>
+              </ul>
+              <ul class="footer-menu">
+                <h3 class="footer-menu__title">Букмекеры</h3>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Рейтинг редакции</a></li>
+                <ul class="footer-menu__list-inner">
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Коэффициенты (маржа)</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Линия и роспись</a></li>
+                </ul>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Рейтинг игроков</a></li>
+              </ul>
+              <div class="footer-menu__col footer-menu__col--2">
+                <ul class="footer-menu">
+                  <h3 class="footer-menu__title">Практика</h3>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Важно и полезно</a></li>
+                  <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вопросы и ответы</a></li>
+                  <li class="footer-menu__item media-disabled"><a class="footer-menu__link" href="#">Обучение</a></li>
+                </ul>
+              </div>
+              <ul class="footer-menu notes">
+                <h3 class="footer-menu__title">Записи</h3>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Все записи</a></li>
+                <li class="footer-menu__item"><a class="footer-menu__link" href="#">Все рубрики</a></li>
+                <li class="footer-menu__item media-disabled"><a class="footer-menu__link" href="#">Все авторы</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="footer-bottom__cont">
+              <div class="footer-bottom__col footer-bottom__col--col-1">
+                <picture>
+                  <source media="(max-width: 1199px)" srcset="assets/img/common/footer/logo-1199.svg"><img class="footer-bottom__logo" src="assets/img/common/footer/logo.svg" alt="Overbetting">
+                </picture>
+                <p class="footer-bottom__text">© 2018 Overbetting — ставки, прогнозы, букмекеры.</p>
+              </div>
+              <div class="footer-bottom__col footer-bottom__col--col-2">
+                <div class="footer-bottom__icon"><span class="footer-bottom__icon-text">18+</span></div>
+                <p class="footer-bottom__text">Мы не принимаем оплату и не проводим игр на реальные деньги. <br>Вся информация носит ознакомительный характер.</p>
+              </div>
+              <div class="footer-bottom__col footer-bottom__col--col-3">
+                <div class="footer-bottom__icon"><span class="footer-bottom__icon-text">!</span></div>
+                <p class="footer-bottom__text">Запрещена перепечатка любых материалов без согласования. <br>Свяжитесь с нами прежде, чем что-либо скопировать.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="assets/js/all.min.js"></script>
+  </body>
+</html>

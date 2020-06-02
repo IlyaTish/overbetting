@@ -1,0 +1,191 @@
+.comp-table
+  border-radius: 6px
+  border: 1px solid $gray
+  overflow: hidden
+
+  &__cols
+    display: flex
+
+    &:nth-child(odd)
+      .comp-table__col
+        background: #FBFBFB
+
+    &:nth-child(even)
+      .comp-table__col
+        background: #FFFFFF
+
+    .comp-table__col
+      min-height: 74px
+
+
+  &__col
+    width: 100%
+    height: 28px
+    padding: 0 24px
+    display: flex
+    align-items: center
+    border-right: 1px dashed $gray
+    background: #FFFFFF
+    box-sizing: border-box
+
+  &__col.comp-col
+    max-width: 414px
+
+  &__col.perc-col
+    max-width: 182px
+    justify-content: center
+    flex-direction: column
+
+  &__col.roi-col
+    max-width: 158px
+    justify-content: center
+    flex-direction: column
+
+  &__col.prognosis-col
+    max-width: 114px
+    justify-content: center
+    text-align: center
+
+    .check-icon
+      margin: 0 0 0 8px
+      color: #1B9162
+      font-size: 16px
+
+  &__col.place-col
+    max-width: 144px
+    justify-content: center
+    flex-direction: column
+
+    .icon
+      color: $gray
+      font-size: 24px
+
+  &__col.rate-col
+    max-width: 88px
+    border: 0
+
+  &__col.profit-col
+    max-width: 124px
+
+
+
+  &__img-cont
+    width: 58px
+    height: 58px
+    margin: 0 8px 0 0
+
+  &__img
+    width: 58px
+    max-width: 100%
+    max-height: 100%
+
+
+  &__title
+    color: #000000
+    font-size: 18px
+    font-weight: 700
+
+
+  &__date
+    margin: 8px 0 0
+    display: flex
+    color: $gray
+    font-size: 14px
+    font-weight: 700
+
+    .icon
+      margin: 0 4px 0 0
+      top: 1px
+      position: relative
+
+
+  &__perc, &__profit
+    color: #1B9162
+    font-size: 24px
+    font-weight: 500
+
+    .sup
+      bottom: 14px
+      position: relative
+      color: inherit
+      font-size: 12px
+
+
+  &__place-text
+    width: 100%
+    margin: 4px 8px 0 0
+    display: inline-block
+    color: #000000
+    font-size: 12px
+    font-weight: 600
+    text-align: center
+
+
+  &__prognosis
+    color: #000000
+    font-size: 24px
+    border-bottom: 1px dashed #000000
+    cursor: pointer
+    transition: .2s
+
+    &:hover
+      color: $main
+      border-bottom: 1px dashed $main
+
+
+  &__rate, &__users
+    width: 40px
+    height: 40px
+    border-radius: 6px
+    border: solid 1px #BDBDBD
+    background-color: #FBFBFB
+    background-repeat: no-repeat
+    background-position: center center
+    box-shadow: inset 0 -2px 0 0 #DBDBDB
+    cursor: pointer
+    transition: .2s
+
+    &:hover
+      background-color: #EDEDF0
+
+  &__rate
+    background-image: url('../img/common/ratings.svg')
+
+  &__users
+    background-image: url('../img/common/users.svg')
+
+  &__place
+    colro: #000000
+    font-size: 24px
+
+
+  &__members-text
+    margin: 4px 0 0
+    display: inline-block
+    color: $gray
+    font-size: 12px
+    font-weight: 600
+
+  .dash
+    color: $gray !important
+    text-decoration: none !important
+    border: none !important
+
+    &:before, &:after
+      display: none
+
+
+
+.comp-caption
+  display: flex
+  border-bottom: 1px solid $gray
+  overflow: hidden
+
+  .comp-table__col
+    justify-content: center
+    background: #F3F3F3
+
+  &__title
+    color: #000000
+    font-size: 12px
+    font-weight: 700

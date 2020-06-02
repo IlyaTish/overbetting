@@ -1,0 +1,37 @@
+extends template.pug
+
+block content
+  //- Include Index page data
+  include data/competition-data.pug
+
+  //- Include Header block ('.header')
+  include assets/blocks/common/header/block.pug
+
+
+  - const page = 'competition'
+  div(class='content '+ page +'')
+    .container
+      .sidebar-content
+        //- Include Sidebar block ('.sidebar')
+        include assets/blocks/common/sidebar/block.pug
+        +sidebar(SIDEBAR_DATA)
+
+
+      .main-content
+        //- Include Comp-head block ('.comp-head')
+        include assets/blocks/@competition/comp-head/block.pug
+
+        //- Include Comp-common block ('.comp-common')
+        include assets/blocks/@competition/comp-common/block.pug
+
+        //- Include Comp-usual block ('.comp-usual')
+        include assets/blocks/@competition/comp-usual/block.pug
+
+        //- Include Comp-usual block ('.comp-seat-n-go')
+        include assets/blocks/@competition/comp-seat-n-go/block.pug
+
+        //- Include Comp-special block ('.comp-special')
+        include assets/blocks/@competition/comp-special/block.pug
+
+  //- Include Footer block ('.footer')
+  include assets/blocks/common/footer/block.pug
