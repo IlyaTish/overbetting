@@ -4,7 +4,7 @@
 
 ### Ссылки на страницы
 
-About page: https://ilyatish.github.io/overbetting
+Index page: https://ilyatish.github.io/overbetting
 
 ### Запуск проекта (команды npm) в ветке develop
 
