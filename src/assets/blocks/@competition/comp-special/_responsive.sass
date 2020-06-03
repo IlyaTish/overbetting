@@ -1,0 +1,24 @@
+@media (max-width: 991px)
+  .comp-special
+    .comp-table
+      &__cols
+        display: grid
+        grid-template-areas: 'comp comp comp comp' 'place profit prognosis rate'
+        grid-template-columns: 1fr 1fr 1fr 88px
+
+        &:nth-child(odd)
+          .comp-table__col
+            background: #FFFFFF
+
+      &__col.place-col
+        max-width: 100%
+        grid-area: place
+
+      &__col.profit-col
+        grid-area: profit
+
+@media (max-width: 767px)
+  .comp-special
+    .comp-table
+      &__cols
+        grid-template-columns: 1fr 1fr 1fr 40px

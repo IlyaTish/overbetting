@@ -1,17 +1,28 @@
-const cardFilters = document.querySelectorAll('.card-filters');
+ready(() => {
+  /* Variables */
 
-[].forEach.call(cardFilters, (el, index) => {
-  el.classList.add('card-filter-'+ index);
+  const cardFilters       = document.querySelectorAll('.card-filters'),
+        cardFiltersFilter = document.querySelectorAll('.card-filters__filter');
 
-  const cardFilters = new Swiper('.card-filters', {
-    loop: false,
-    slidesPerView: 'auto',
-    spaceBetween: 4,
-    allowTouchMove: true,
-    breakpoints: {
-      549: {
-        allowTouchMove: false,
+
+
+  /* Execution of functions */
+
+  setActive(cardFilters, cardFiltersFilter);
+
+  [].forEach.call(cardFilters, (el, index) => {
+    el.classList.add('card-filter-'+ index);
+
+    const cardFiltersSwiper = new Swiper('.card-filters', {
+      loop: false,
+      slidesPerView: 'auto',
+      spaceBetween: 4,
+      allowTouchMove: true,
+      breakpoints: {
+        549: {
+          allowTouchMove: false,
+        }
       }
-    }
+    })
   })
 });

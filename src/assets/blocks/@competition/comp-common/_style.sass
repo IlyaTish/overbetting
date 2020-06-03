@@ -1,3 +1,9 @@
+.content.competition
+  .card
+    &:last-of-type
+      margin: 0
+
+
 .comp-table
   border-radius: 6px
   border: 1px solid $gray
@@ -5,6 +11,7 @@
 
   &__cols
     display: flex
+    background: #FFFFFF
 
     &:nth-child(odd)
       .comp-table__col
@@ -14,14 +21,11 @@
       .comp-table__col
         background: #FFFFFF
 
-    .comp-table__col
-      min-height: 74px
-
 
   &__col
     width: 100%
-    height: 28px
-    padding: 0 24px
+    min-height: 74px
+    padding: 6px 24px
     display: flex
     align-items: center
     border-right: 1px dashed $gray
@@ -62,7 +66,9 @@
 
   &__col.rate-col
     max-width: 88px
+    justify-content: center
     border: 0
+
 
   &__col.profit-col
     max-width: 124px
@@ -72,6 +78,7 @@
   &__img-cont
     width: 58px
     height: 58px
+    flex: 0 0 58px
     margin: 0 8px 0 0
 
   &__img
@@ -182,6 +189,7 @@
   overflow: hidden
 
   .comp-table__col
+    min-height: 28px
     justify-content: center
     background: #F3F3F3
 

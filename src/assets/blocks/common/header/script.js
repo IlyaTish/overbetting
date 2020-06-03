@@ -30,7 +30,7 @@ const headerTeleport = () => {
 
 // Burger menu
 const initBurgerMenu = () => {
-  burgerBtn.addEventListener('click', (e) => {
+  burgerBtn.addEventListener('click', e => {
     burgerBtn.classList.toggle('active');
     burgerMenu.classList.toggle('active');
 

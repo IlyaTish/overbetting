@@ -1,0 +1,37 @@
+@media (max-width: 1260px)
+  .comp-usual
+    .comp-table
+      &__col.perc-col
+          max-width: 170px
+
+
+
+@media (max-width: 1199px)
+  .comp-usual
+    .comp-table
+      &__col.perc-col
+          max-width: 196px
+
+
+@media (max-width: 991px)
+  .comp-usual
+    .comp-table
+      &__cols
+        display: grid
+        grid-template-areas: 'comp comp comp comp' 'place perc prognosis rate'
+        grid-template-columns: 1fr 1fr 1fr 88px
+
+        &:nth-child(odd)
+          .comp-table__col
+            background: #FFFFFF
+
+      &__col.perc-col
+        max-width: 100%
+
+
+
+@media (max-width: 767px)
+  .comp-usual
+    .comp-table
+      &__cols
+        grid-template-columns: 1fr 1fr 1fr 40px

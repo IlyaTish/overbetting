@@ -7,15 +7,30 @@ const viewportWidth   = window.innerWidth || document.documentElement.clientWidt
 /* Functions */
 
 // Document ready function
-const ready = (callback) => {
+const ready = callback => {
   if (document.readyState != 'loading') callback();
   else document.addEventListener('DOMContentLoaded', callback);
 }
 
-
 // Teleport function
 const appendElem = (elem, cont) => {
   if (cont) cont.appendChild(elem)
+}
+
+// Set active class
+const setActive = (elems, childElems) => {
+  [].forEach.call(elems, (item, index) => {
+    item.addEventListener('click', e => {
+      const target = e.target;
+
+      if (target === item) return;
+
+      [].forEach.call(childElems, (childItem, index) => {
+        childItem.classList.remove('active');
+        target.classList.add('active');
+      })
+    })
+  });
 }
 
 
@@ -27,6 +42,9 @@ const appendElem = (elem, cont) => {
 //= require ../blocks/@index/card-items/script.js
 //= require ../blocks/@index/card-slider/script.js
 //= require ../blocks/@index/blog/script.js
+
+//= require ../blocks/@competition/comp-head/script.js
+
 //= require ../blocks/common/footer/script.js
 
 
