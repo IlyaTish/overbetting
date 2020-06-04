@@ -1,12 +1,12 @@
 /* Variables */
 
-const footerMenuMedia   = document.querySelector('.footer-menu.media-col-1'),
-      footerMenuCol_1   = document.querySelector('.footer-menu__col--1'),
-      footerMenuCol_2   = document.querySelector('.footer-menu__col--2'),
+const menuMedia         = document.querySelector('.footer menu.media-col-1'),
+      menuCol_1         = document.querySelector('.footer menu__col--1'),
+      menuCol_2         = document.querySelector('.footer menu__col--2'),
       footerContentCont = document.querySelector('.footer-content__cont'),
 
-      footerMenuCompetition = document.querySelector('.footer-menu__col--1 .footer-menu.competition'),
-      footerMenuNotes       = document.querySelector('.footer-menu.notes');
+      menuCompetition   = document.querySelector('.footer menu__col--1 .menu.competition'),
+      menuNotes         = document.querySelector('.footer menu.notes');
 
 let footer_flag = 1;
 
@@ -20,14 +20,14 @@ const footerTeleport = () => {
 
   if ((viewportWidth < 1199) && (footer_flag === 1)) {
     footer_flag = 0;
-    appendElem(footerMenuCompetition, footerMenuMedia);
-    appendElem(footerMenuNotes, footerMenuCol_2);
+    appendElem(menuCompetition, menuMedia);
+    appendElem(menuNotes, menuCol_2);
   }
 
   if ((viewportWidth > 1199) && (footer_flag === 0)) {
     footer_flag = 1;
-    appendElem(footerMenuCompetition, footerMenuCol_1);
-    appendElem(footerMenuNotes, footerContentCont);
+    appendElem(menuCompetition, menuCol_1);
+    appendElem(menuNotes, footerContentCont);
   }
 }
 
@@ -35,8 +35,8 @@ const footerTeleport = () => {
 
 /* Execution of functions */
 
-if (viewportWidth < 1199) appendElem(footerMenuCompetition, footerMenuMedia);
-if (viewportWidth > 1199) appendElem(footerMenuCompetition, footerMenuCol_1);
+if (viewportWidth < 1199) appendElem(menuCompetition, menuMedia);
+if (viewportWidth > 1199) appendElem(menuCompetition, menuCol_1);
 
-if (viewportWidth < 1199) appendElem(footerMenuNotes, footerMenuCol_2);
-if (viewportWidth > 1199) appendElem(footerMenuNotes, footerContentCont);
+if (viewportWidth < 1199) appendElem(menuNotes, menuCol_2);
+if (viewportWidth > 1199) appendElem(menuNotes, footerContentCont);

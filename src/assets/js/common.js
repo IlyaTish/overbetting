@@ -14,7 +14,7 @@ const ready = callback => {
 
 // Teleport function
 const appendElem = (elem, cont) => {
-  if (cont) cont.appendChild(elem)
+  if (cont && elem) cont.appendChild(elem)
 }
 
 // Set active class
@@ -38,7 +38,6 @@ const setActive = (elems, selector) => {
 const popover = (arr, pop, popClass, flag) => {
   document.addEventListener('click', e => {
     const target = e.target;
-    console.log(target);
 
     [].forEach.call(arr, (el, index) => {
       const isClickInside = el.contains(target);
