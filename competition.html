@@ -45,7 +45,11 @@
                         <div class="sidebar">
                           <div class="coupon"><span class="coupon__text">Купон</span><span class="coupon__amount">4</span></div>
                           <ul class="sidebar-menu card">
-                            <li class="sidebar-menu__item"><a class="sidebar-menu__link my-prognosis" href="#">Мои прогнозы</a></li>
+                            <li class="sidebar-menu__item"><a class="sidebar-menu__link my-prognosis" href="#">Мои прогнозы</a>
+                              <ul class="sidebar-menu-inner">
+                                <li class="sidebar-menu-inner__item"><a class="sidebar-menu-inner__link" href="#">За и Против</a></li>
+                              </ul>
+                            </li>
                             <li class="sidebar-menu__item"><a class="sidebar-menu__link my-feed" href="#">Лента прогнозов <span class='feeds-amount'>4</span></a></li>
                             <li class="sidebar-menu__item"><a class="sidebar-menu__link my-competitions active" href="#">Мои конкурсы</a></li>
                           </ul>
@@ -186,7 +190,7 @@
                 <div class="comp-table__cols">
                   <div class="comp-table__col comp-col">
                     <div class="comp-table__img-cont"><img class="comp-table__img" src="assets/img/common/nba.png" alt="Эксперт НБА"></div>
-                    <div class="comp-table__info"><span class="comp-table__title">Эксперт НБА</span><span class="comp-table__date"><i class='icon clock-icon'></i> Набор участников</span></div>
+                    <div class="comp-table__info"><span class="comp-table__title">Эксперт НБА</span><span class="comp-table__date"><i class='icon clock-icon'></i> Набор участников</span></div><a class="btn btn-light" href="#"><span class="btn__text">Покинуть</span></a>
                   </div>
                   <div class="comp-table__col place-col"><span class="comp-table__place"><i class='icon clock-icon'></i></span><span class="comp-table__members-text">200 участников</span></div>
                   <div class="comp-table__col perc-col"><span class="comp-table__perc dash">—</span></div>
@@ -372,6 +376,59 @@
           </div>
         </div>
       </footer>
+      <div class="users-popover">
+        <div class="users-popover__title-cont"><span class="users-popover__title">Участники конкурса</span></div>
+        <ul class="users-popover__list">
+          <li class="users-popover__item"><a class="users-popover__link" href="#">
+              <div class="user">
+                <div class="user__ava"><img src="assets/img/common/users-popover/ava-1.png" alt="Naomí Yepes"></div><span class="user__name">Naomí Yepes</span>
+              </div></a></li>
+          <li class="users-popover__item"><a class="users-popover__link" href="#">
+              <div class="user">
+                <div class="user__ava"><img src="assets/img/common/users-popover/ava-2.png" alt="Lia Castro"></div><span class="user__name">Lia Castro</span>
+              </div></a></li>
+          <li class="users-popover__item"><a class="users-popover__link" href="#">
+              <div class="user">
+                <div class="user__ava"><img src="assets/img/common/users-popover/ava-3.png" alt="Nembo Lukeni"></div><span class="user__name">Nembo Lukeni</span>
+              </div></a></li>
+          <li class="users-popover__item"><a class="users-popover__link" href="#">
+              <div class="user">
+                <div class="user__ava"><img src="assets/img/common/users-popover/ava-4.png" alt="Ohta Kin"></div><span class="user__name">Ohta Kin</span>
+              </div></a></li>
+          <li class="users-popover__item"><a class="users-popover__link" href="#">
+              <div class="user">
+                <div class="user__ava"><img src="assets/img/common/users-popover/ava-5.png" alt="Tao Yi"></div><span class="user__name">Tao Yi</span>
+              </div></a></li><a class="users-popover__show-more" href="#">Показать всех</a>
+        </ul>
+      </div>
+      <div class="analytics-popover">
+        <div class="analytics-popover__title-cont"><span class="analytics-popover__title">Ставок:&nbsp; 500</span></div>
+        <ul class="analytics-popover__list">
+          <li class="analytics-popover__item">
+            <div class="analytics-popover__text-cont"><span class="analytics-popover__text-bold">Выиграно:&nbsp;</span><span class="analytics-popover__text green">+100</span></div>
+          </li>
+          <li class="analytics-popover__item">
+            <div class="analytics-popover__text-cont"><span class="analytics-popover__text-bold">Расход/Аннулировано:&nbsp;</span><span class="analytics-popover__text">100</span></div>
+          </li>
+          <li class="analytics-popover__item">
+            <div class="analytics-popover__text-cont"><span class="analytics-popover__text-bold">Проиграно:&nbsp;</span><span class="analytics-popover__text red">-298</span></div>
+          </li>
+          <li class="analytics-popover__item">
+            <div class="analytics-popover__text-cont"><span class="analytics-popover__text-bold">В игре:&nbsp;</span><span class="analytics-popover__text gray">2</span></div>
+          </li>
+          <li class="analytics-popover__item">
+            <div class="analytics-popover__text-cont"><span class="analytics-popover__text-bold">Оборот:&nbsp;</span><span class="analytics-popover__text">10544279868</span></div>
+          </li>
+        </ul>
+        <ul class="analytics-popover__links-list">
+          <li class="analytics-popover__item">
+            <div class="analytics-popover__link" href="#">Мои прогнозы</div>
+          </li>
+          <li class="analytics-popover__item">
+            <div class="analytics-popover__link" href="#">Все прогнозы</div>
+          </li>
+        </ul>
+      </div>
     </div>
     <script src="assets/js/all.min.js"></script>
   </body>
