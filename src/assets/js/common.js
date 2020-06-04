@@ -14,7 +14,7 @@ const ready = callback => {
 
 // Teleport function
 const appendElem = (elem, cont) => {
-  if (cont && elem) cont.appendChild(elem)
+  if (cont) cont.appendChild(elem)
 }
 
 // Set active class

@@ -6,6 +6,31 @@
     .media-disabled
       display: none
 
+    .menu
+      &__col
+        column-count: 1
+
+      &__title
+        margin: 0 0 14px
+        color: #282828
+        font-size: 16px
+        text-transform: unset
+
+      &__item
+        margin: 0 0 8px
+
+      &__link
+        font-size: 16px
+        font-weight: 200
+        font-family: 'FedraSansPro', 'OpenSans', 'Roboto', sans-serif
+
+      &__list-inner
+        padding: 0
+
+        .menu__item
+          &:before
+            display: none
+
 
   .footer-nav
     padding: 0
@@ -54,33 +79,7 @@
         width: 20px
 
 
-  .footer-menu
-    &__col
-      column-count: 1
-
-    &__title
-      margin: 0 0 14px
-      color: #282828
-      font-size: 16px
-      text-transform: unset
-
-    &__item
-      margin: 0 0 8px
-
-    &__link
-      font-size: 16px
-      font-weight: 200
-      font-family: 'FedraSansPro', 'OpenSans', 'Roboto', sans-serif
-
-    &__list-inner
-      padding: 0
-
-      .footer-menu__item
-        &:before
-          display: none
-
-
-  .footer-menu.notes
+  .menu.notes
     margin: 30px 0 0
 
 

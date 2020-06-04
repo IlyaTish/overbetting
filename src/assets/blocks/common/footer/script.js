@@ -1,12 +1,12 @@
 /* Variables */
 
-const menuMedia         = document.querySelector('.footer menu.media-col-1'),
-      menuCol_1         = document.querySelector('.footer menu__col--1'),
-      menuCol_2         = document.querySelector('.footer menu__col--2'),
+const menuMedia         = document.querySelector('.footer .menu.media-col-1'),
+      menuCol_1         = document.querySelector('.footer .menu__col--1'),
+      menuCol_2         = document.querySelector('.footer .menu__col--2'),
       footerContentCont = document.querySelector('.footer-content__cont'),
 
-      menuCompetition   = document.querySelector('.footer menu__col--1 .menu.competition'),
-      menuNotes         = document.querySelector('.footer menu.notes');
+      menuCompetition   = document.querySelector('.menu.competition'),
+      menuNotes         = document.querySelector('.footer .menu.notes');
 
 let footer_flag = 1;
 
