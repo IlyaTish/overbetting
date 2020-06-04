@@ -34,6 +34,10 @@
     .analytics-popover__link
       color: #184dbd
       font-weight: 700
+      cursor: pointer
+      transition: .2s
+      &:hover
+        color: $main
 
   &__item
     list-style: none
@@ -44,7 +48,6 @@
     align-items: center 
     text-decoration: none
     box-sizing: border-box
-    transition: .2s
     &:before
       width: 4px
       height: 4px
@@ -58,10 +61,16 @@
       box-sizing: border-box
 
   &__text-bold, &__text
+    display: flex
+    align-items: center
     color: #000000
     font-size: 14px
     font-weight: 700
     font-family: 'OpenSans', 'Roboto' sans-serif
+
+    .icon
+      color: $green
+      font-size: 14px
 
   &__text
     font-weight: normal
