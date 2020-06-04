@@ -24,7 +24,7 @@ mixin card(CARDS_DATA)
 
               .card-list__col.image-col
                 .card-list__img-cont
-                  img.card-list__logo(src=''+ item.img +'', alt='1xСтавка')
+                  img.card-list__logo(src=''+ item.img +'', alt=''+ item.name +'')
 
               .card-list__col.price-col
                 if item.price
