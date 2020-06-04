@@ -1,0 +1,66 @@
+.analytics-popover
+  width: 244px
+  position: absolute
+  border-radius: 6px
+  border: solid 1px #D5D5D5
+  background: #FFFFFF
+  box-shadow: 0 6px 10px 0 rgba(183, 183, 183, 0.2)
+  opacity: 0
+  overflow: hidden
+  transition: opacity .2s
+
+  &__title-cont
+    padding: 6px 12px
+    background: #E3EDF7
+    box-sizing: border-box
+
+  &__title
+    display: inline-block
+    font-size: 14px
+    font-weight: 700
+    font-family: 'OpenSans', 'Roboto' sans-serif
+
+  &__list, &__links-list
+    margin: 0
+    padding: 4px 12px
+    box-sizing: border-box
+
+  &__links-list
+    margin: 0 12px
+    padding: 4px 0
+    border-top: 1px solid #D5D5D5
+
+    .analytics-popover__link
+      color: #184dbd
+      font-weight: 700
+
+  &__item
+    list-style: none
+
+  &__text-cont, &__link
+    padding: 4px 0
+    display: flex
+    align-items: center 
+    text-decoration: none
+    box-sizing: border-box
+    transition: .2s
+    &:before
+      width: 4px
+      height: 4px
+      content: ''
+      display: block
+      position: relative
+      flex: 0 0 4px
+      margin: 0 8px 0 0
+      border-radius: 100%
+      border: 1px solid #ACACAC
+      box-sizing: border-box
+
+  &__text-bold, &__text
+    color: #000000
+    font-size: 14px
+    font-weight: 700
+    font-family: 'OpenSans', 'Roboto' sans-serif
+
+  &__text
+    font-weight: normal

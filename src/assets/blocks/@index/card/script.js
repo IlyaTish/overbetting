@@ -2,7 +2,7 @@ ready(() => {
   /* Variables */
 
   const cardFilters       = document.querySelectorAll('.card-filters'),
-        cardFiltersFilter = document.querySelectorAll('.card-filters__filter');
+        cardFiltersFilter = '.card-filters__filter';
 
 
 

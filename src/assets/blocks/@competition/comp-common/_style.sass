@@ -22,6 +22,9 @@
       .comp-table__col
         background: #FFFFFF
 
+  .btn
+    padding: 10px
+
 
   &__col
     width: 100%
@@ -35,6 +38,8 @@
 
   &__col.comp-col
     max-width: 414px
+    padding: 6px 16px 6px 24px
+    flex-wrap: wrap
 
   &__col.perc-col
     max-width: 182px
@@ -93,6 +98,8 @@
     font-size: 18px
     font-weight: 700
 
+  &__info
+    margin: 0 auto 0 0
 
   &__date
     margin: 8px 0 0
@@ -173,11 +180,6 @@
     color: $gray
     font-size: 12px
     font-weight: 600
-
-  .dash
-    color: $gray !important
-    text-decoration: none !important
-    border: none !important
 
     &:before, &:after
       display: none

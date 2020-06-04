@@ -1,0 +1,61 @@
+.users-popover
+  width: 244px
+  position: absolute
+  border-radius: 6px
+  border: solid 1px #D5D5D5
+  background: #FFFFFF
+  box-shadow: 0 6px 10px 0 rgba(183, 183, 183, 0.2)
+  opacity: 0
+  overflow: hidden
+  transition: opacity .2s
+
+  &__title-cont
+    padding: 17px 12px 12px
+    background: #E3EDF7
+    box-sizing: border-box
+
+  &__title
+    display: inline-block
+    font-size: 20px
+    font-weight: 300
+    font-family: 'FedraSansPro', 'OpenSans', sans-serif
+
+  &__list
+    margin: 0
+    padding: 0 12px
+    box-sizing: border-box
+
+  &__item
+    list-style: none
+
+  &__link
+    display: block
+    padding: 8px 0
+    text-decoration: none
+    border-bottom: 1px solid #F5F5F5
+    box-sizing: border-box
+    transition: .2s
+    &:hover
+      .user__name
+        color: $main
+
+    .user
+      &__ava
+        border: none
+      &__name
+        color: #000000
+
+  &__show-more
+    display: block
+    padding: 8px 0
+    color: #000000
+    font-size: 14px
+    font-weight: 300
+    font-family: 'Roboto', sans-serif
+    text-decoration: none
+    transition: .2s
+    &:hover
+      color: $main
+
+.users-popover.active
+  display: block

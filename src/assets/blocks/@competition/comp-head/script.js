@@ -2,7 +2,7 @@ ready(() => {
   /* Variables */
 
   const compFilters       = document.querySelectorAll('.comp-filters'),
-        compFiltersFilter = document.querySelectorAll('.comp-filters__filter');
+        compFiltersFilter = '.comp-filters__filter';
 
 
 

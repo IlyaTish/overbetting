@@ -1,7 +1,7 @@
 @media (max-width: 1260px)
   .comp-table
     &__col
-      padding: 6px 12px
+      padding: 6px 12px !important
 
     &__img-cont
       width: 40px
@@ -112,12 +112,16 @@
 
 
   .comp-table
+    .btn
+      padding: 6px
+
+
     &__cols
       grid-template-columns: 1fr 1fr 1fr 40px
 
     &__col
       min-height: 42px
-      padding: 0 6px
+      padding: 0 6px !important
 
     &__col.place-col
       .icon
